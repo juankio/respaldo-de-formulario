@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 class ListPage extends StatelessWidget {
   static const String ROUTE = "/";
 
+  const ListPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return _MyList();
@@ -67,8 +69,8 @@ class __MyListState extends State<_MyList> {
       direction: DismissDirection.startToEnd,
       background: Container(
         color: Colors.red,
-        padding: EdgeInsets.only(left: 5),
-        child: Align(
+        padding: const EdgeInsets.only(left: 5),
+        child: const Align(
           alignment: Alignment.centerLeft,
           child: Icon(Icons.delete, color: Colors.white),
         ),
@@ -88,7 +90,7 @@ class __MyListState extends State<_MyList> {
                         },
                       ));
             },
-            child: Icon(Icons.edit)),
+            child: const Icon(Icons.edit)),
       ),
     );
   }
